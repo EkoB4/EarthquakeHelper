@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F949CF742992132C00D31B2A /* Duduk.mp3 */; };
 		F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */; };
 		F9D784AE2992018200C2727F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AD2992018200C2727F /* ContentView.swift */; };
 		F9D784B02992018200C2727F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D784AF2992018200C2727F /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		F9D784BD2992018200C2727F /* EarthquakeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784BC2992018200C2727F /* EarthquakeAppTests.swift */; };
 		F9D784C72992018200C2727F /* EarthquakeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784C62992018200C2727F /* EarthquakeAppUITests.swift */; };
 		F9D784C92992018200C2727F /* EarthquakeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784C82992018200C2727F /* EarthquakeAppUITestsLaunchTests.swift */; };
+		F9D784D6299201B800C2727F /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784D5299201B800C2727F /* VolumeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F949CF742992132C00D31B2A /* Duduk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Duduk.mp3; path = ../../../../Downloads/Duduk.mp3; sourceTree = "<group>"; };
 		F9D784A82992018200C2727F /* EarthquakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppApp.swift; sourceTree = "<group>"; };
 		F9D784AD2992018200C2727F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		F9D784C22992018200C2727F /* EarthquakeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D784C62992018200C2727F /* EarthquakeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppUITests.swift; sourceTree = "<group>"; };
 		F9D784C82992018200C2727F /* EarthquakeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9D784D5299201B800C2727F /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F949CF72299211DF00D31B2A /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				F949CF742992132C00D31B2A /* Duduk.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		F9D7849F2992018100C2727F = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,8 @@
 			children = (
 				F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */,
 				F9D784AD2992018200C2727F /* ContentView.swift */,
+				F949CF72299211DF00D31B2A /* Sound */,
+				F9D784D7299201BD00C2727F /* View */,
 				F9D784AF2992018200C2727F /* Assets.xcassets */,
 				F9D784B12992018200C2727F /* Preview Content */,
 			);
@@ -125,6 +139,14 @@
 				F9D784C82992018200C2727F /* EarthquakeAppUITestsLaunchTests.swift */,
 			);
 			path = EarthquakeAppUITests;
+			sourceTree = "<group>";
+		};
+		F9D784D7299201BD00C2727F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9D784D5299201B800C2727F /* VolumeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +255,7 @@
 			files = (
 				F9D784B32992018200C2727F /* Preview Assets.xcassets in Resources */,
 				F9D784B02992018200C2727F /* Assets.xcassets in Resources */,
+				F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D784AE2992018200C2727F /* ContentView.swift in Sources */,
+				F9D784D6299201B800C2727F /* VolumeView.swift in Sources */,
 				F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
