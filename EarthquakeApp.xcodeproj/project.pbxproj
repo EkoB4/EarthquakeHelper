@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F933C7642995E7A400CAAC59 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933C7632995E7A400CAAC59 /* LottieView.swift */; };
+		F93B194C29962F7300A2F416 /* whistle.json in Resources */ = {isa = PBXBuildFile; fileRef = F93B194B29962F7300A2F416 /* whistle.json */; };
+		F93B194E2996309700A2F416 /* Scream.json in Resources */ = {isa = PBXBuildFile; fileRef = F93B194D2996309700A2F416 /* Scream.json */; };
+		F93B19502996368C00A2F416 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B194F2996368C00A2F416 /* CallView.swift */; };
 		F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F949CF742992132C00D31B2A /* Duduk.mp3 */; };
+		F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F99947B32992EE82008D0C1A /* Bagirma.mp3 */; };
 		F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */; };
 		F9D784AE2992018200C2727F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AD2992018200C2727F /* ContentView.swift */; };
 		F9D784B02992018200C2727F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D784AF2992018200C2727F /* Assets.xcassets */; };
@@ -16,6 +21,8 @@
 		F9D784C72992018200C2727F /* EarthquakeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784C62992018200C2727F /* EarthquakeAppUITests.swift */; };
 		F9D784C92992018200C2727F /* EarthquakeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784C82992018200C2727F /* EarthquakeAppUITestsLaunchTests.swift */; };
 		F9D784D6299201B800C2727F /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784D5299201B800C2727F /* VolumeView.swift */; };
+		F9DA2D82299303E0004ACA7A /* AudioButtonOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA2D81299303E0004ACA7A /* AudioButtonOperation.swift */; };
+		F9DA2D8529930D49004ACA7A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F9DA2D8429930D49004ACA7A /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F933C7632995E7A400CAAC59 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		F93B194B29962F7300A2F416 /* whistle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whistle.json; sourceTree = "<group>"; };
+		F93B194D2996309700A2F416 /* Scream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Scream.json; sourceTree = "<group>"; };
+		F93B194F2996368C00A2F416 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		F949CF742992132C00D31B2A /* Duduk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Duduk.mp3; path = ../../../../Downloads/Duduk.mp3; sourceTree = "<group>"; };
+		F99947B32992EE82008D0C1A /* Bagirma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bagirma.mp3; path = ../../../../Downloads/Bagirma.mp3; sourceTree = "<group>"; };
 		F9D784A82992018200C2727F /* EarthquakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppApp.swift; sourceTree = "<group>"; };
 		F9D784AD2992018200C2727F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +60,7 @@
 		F9D784C62992018200C2727F /* EarthquakeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppUITests.swift; sourceTree = "<group>"; };
 		F9D784C82992018200C2727F /* EarthquakeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F9D784D5299201B800C2727F /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		F9DA2D81299303E0004ACA7A /* AudioButtonOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioButtonOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DA2D8529930D49004ACA7A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +89,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F93B19532996374F00A2F416 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA2D81299303E0004ACA7A /* AudioButtonOperation.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		F949CF72299211DF00D31B2A /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				F93B194B29962F7300A2F416 /* whistle.json */,
+				F93B194D2996309700A2F416 /* Scream.json */,
+				F99947B32992EE82008D0C1A /* Bagirma.mp3 */,
 				F949CF742992132C00D31B2A /* Duduk.mp3 */,
 			);
 			path = Sound;
@@ -106,8 +131,10 @@
 		F9D784AA2992018200C2727F /* EarthquakeApp */ = {
 			isa = PBXGroup;
 			children = (
+				F93B19532996374F00A2F416 /* Modal */,
 				F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */,
 				F9D784AD2992018200C2727F /* ContentView.swift */,
+				F933C7632995E7A400CAAC59 /* LottieView.swift */,
 				F949CF72299211DF00D31B2A /* Sound */,
 				F9D784D7299201BD00C2727F /* View */,
 				F9D784AF2992018200C2727F /* Assets.xcassets */,
@@ -144,6 +171,7 @@
 		F9D784D7299201BD00C2727F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F93B194F2996368C00A2F416 /* CallView.swift */,
 				F9D784D5299201B800C2727F /* VolumeView.swift */,
 			);
 			path = View;
@@ -165,6 +193,9 @@
 			dependencies = (
 			);
 			name = EarthquakeApp;
+			packageProductDependencies = (
+				F9DA2D8429930D49004ACA7A /* Lottie */,
+			);
 			productName = EarthquakeApp;
 			productReference = F9D784A82992018200C2727F /* EarthquakeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +268,9 @@
 				Base,
 			);
 			mainGroup = F9D7849F2992018100C2727F;
+			packageReferences = (
+				F9DA2D8329930D49004ACA7A /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = F9D784A92992018200C2727F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,8 +287,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */,
+				F93B194C29962F7300A2F416 /* whistle.json in Resources */,
 				F9D784B32992018200C2727F /* Preview Assets.xcassets in Resources */,
 				F9D784B02992018200C2727F /* Assets.xcassets in Resources */,
+				F93B194E2996309700A2F416 /* Scream.json in Resources */,
 				F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93B19502996368C00A2F416 /* CallView.swift in Sources */,
+				F9DA2D82299303E0004ACA7A /* AudioButtonOperation.swift in Sources */,
 				F9D784AE2992018200C2727F /* ContentView.swift in Sources */,
+				F933C7642995E7A400CAAC59 /* LottieView.swift in Sources */,
 				F9D784D6299201B800C2727F /* VolumeView.swift in Sources */,
 				F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */,
 			);
@@ -601,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9DA2D8329930D49004ACA7A /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9DA2D8429930D49004ACA7A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9DA2D8329930D49004ACA7A /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9D784A02992018100C2727F /* Project object */;
 }

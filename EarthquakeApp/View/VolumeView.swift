@@ -8,38 +8,58 @@
 import SwiftUI
 import AVFAudio
 struct VolumeView: View {
-    @State var soundPlayer : AVAudioPlayer!
+    
+    let manager: AudioButtonOperation = AudioButtonOperation()
+    
     var body: some View {
-        VStack{
+        ScrollView(.vertical){
             VStack{
                 VStack{
-                    Image("duduk")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 200,height: 200)
-                        .background(RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 300))
-                }.padding(.vertical,60)
-                HStack{
-                    Button {
-                        self.soundPlayer.play()
-                    } label: {
-                        RoundedRectangle(cornerRadius: 20).overlay{Text("Play").foregroundColor(.white).bold()}
-                            .foregroundColor(.blue)
-                            .frame(width: 150,height: 50)
+                    VStack{
+                       LottieView(lottie: "whistle")
+                            .frame(width: 300,height: 300)
+                            .background(RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 300))
+                            .foregroundColor(Color("Blue3"))
                     }
-                    Button {
-                        self.soundPlayer.pause()
-                    } label: {
-                        RoundedRectangle(cornerRadius: 20).overlay{Text("Pause").foregroundColor(.white).bold()}
-                            .frame(width: 150,height: 50)
+                    HStack{
+                        Button {
+                            manager.playSound(key: .wisthle)
+                        } label: {
+                            RoundedRectangle(cornerRadius: 20)
+                                .frame(width: 200,height: 50).overlay {
+                                    Text("Play").foregroundColor(.white).bold().font(.system(size: 20))
+                                }
+                        }.foregroundColor(Color("Blue1"))
+                        Button {
+                            manager.stopSound(key: .wisthle)
+                        } label: {
+                            RoundedRectangle(cornerRadius: 20).overlay(content: {
+                                Text("Stop").foregroundColor(.white).bold().font(.system(size: 20))
+                            })
+                            .frame(width: 100,height: 50)
+                        }.foregroundColor(Color("Blue1"))
+                    }
+                    VStack{
+                        LottieView(lottie: "Scream")
+                            .frame(width: 300,height: 300)
+                            .background(RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 300))
+                            .foregroundColor(Color("Blue3"))
+                    }//.padding(.vertical,10)
+                    HStack{
+                        Button {
+                            manager.playSound(key: .scary)
+                        } label: {
+                            RoundedRectangle(cornerRadius: 20).frame(width: 200,height: 50)
+                                .overlay {Text("Play").foregroundColor(.white).bold().font(.system(size: 20))}
+                        }.foregroundColor(Color("Blue1"))
+                        Button {
+                            manager.stopSound(key: .scary)
+                        } label: {
+                            RoundedRectangle(cornerRadius: 20).overlay {Text("Stop").foregroundColor(.white).bold().font(.system(size: 20))}.frame(width: 100,height: 50)
+                        }.foregroundColor(Color("Blue1"))
                     }
                 }
-        
-                Spacer()
             }
-        }.onAppear {
-            let sound = Bundle.main.path(forResource: "Duduk", ofType: ".mp3")
-            self.soundPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         }
     }
 }
