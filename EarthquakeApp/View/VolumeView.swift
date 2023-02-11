@@ -16,7 +16,7 @@ struct VolumeView: View {
             VStack{
                 VStack{
                     VStack{
-                       LottieView(lottie: "whistle")
+                       LottieViewModal(lottie: "whistle")
                             .frame(width: 300,height: 300)
                             .background(RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 300))
                             .foregroundColor(Color("Blue3"))
@@ -40,7 +40,7 @@ struct VolumeView: View {
                         }.foregroundColor(Color("Blue1"))
                     }
                     VStack{
-                        LottieView(lottie: "Scream")
+                        LottieViewModal(lottie: "Scream")
                             .frame(width: 300,height: 300)
                             .background(RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 300))
                             .foregroundColor(Color("Blue3"))

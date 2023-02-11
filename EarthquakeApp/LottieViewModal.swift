@@ -9,7 +9,7 @@ import Foundation
 import Lottie
 import SwiftUI
 
-struct LottieView : UIViewRepresentable {
+struct LottieViewModal : UIViewRepresentable {
     func makeUIView(context: Context) -> UIView {
         let view = UIView(frame: .zero)
         animationView.animation = LottieAnimation.named(lottie)

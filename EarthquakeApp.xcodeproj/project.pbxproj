@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F933C7642995E7A400CAAC59 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933C7632995E7A400CAAC59 /* LottieView.swift */; };
+		F933C7642995E7A400CAAC59 /* LottieViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933C7632995E7A400CAAC59 /* LottieViewModal.swift */; };
 		F93B194C29962F7300A2F416 /* whistle.json in Resources */ = {isa = PBXBuildFile; fileRef = F93B194B29962F7300A2F416 /* whistle.json */; };
 		F93B194E2996309700A2F416 /* Scream.json in Resources */ = {isa = PBXBuildFile; fileRef = F93B194D2996309700A2F416 /* Scream.json */; };
 		F93B19502996368C00A2F416 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B194F2996368C00A2F416 /* CallView.swift */; };
 		F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F949CF742992132C00D31B2A /* Duduk.mp3 */; };
 		F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F99947B32992EE82008D0C1A /* Bagirma.mp3 */; };
+		F9CCB6E7299848E900F952EE /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6E6299848E900F952EE /* LocationView.swift */; };
+		F9CCB6ED299859AB00F952EE /* LocationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */; };
 		F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */; };
 		F9D784AE2992018200C2727F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AD2992018200C2727F /* ContentView.swift */; };
 		F9D784B02992018200C2727F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D784AF2992018200C2727F /* Assets.xcassets */; };
@@ -43,12 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F933C7632995E7A400CAAC59 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		F933C7632995E7A400CAAC59 /* LottieViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewModal.swift; sourceTree = "<group>"; };
 		F93B194B29962F7300A2F416 /* whistle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whistle.json; sourceTree = "<group>"; };
 		F93B194D2996309700A2F416 /* Scream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Scream.json; sourceTree = "<group>"; };
 		F93B194F2996368C00A2F416 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		F949CF742992132C00D31B2A /* Duduk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Duduk.mp3; path = ../../../../Downloads/Duduk.mp3; sourceTree = "<group>"; };
 		F99947B32992EE82008D0C1A /* Bagirma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bagirma.mp3; path = ../../../../Downloads/Bagirma.mp3; sourceTree = "<group>"; };
+		F9CCB6E6299848E900F952EE /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModal.swift; sourceTree = "<group>"; };
 		F9D784A82992018200C2727F /* EarthquakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppApp.swift; sourceTree = "<group>"; };
 		F9D784AD2992018200C2727F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,7 +138,8 @@
 				F93B19532996374F00A2F416 /* Modal */,
 				F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */,
 				F9D784AD2992018200C2727F /* ContentView.swift */,
-				F933C7632995E7A400CAAC59 /* LottieView.swift */,
+				F933C7632995E7A400CAAC59 /* LottieViewModal.swift */,
+				F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */,
 				F949CF72299211DF00D31B2A /* Sound */,
 				F9D784D7299201BD00C2727F /* View */,
 				F9D784AF2992018200C2727F /* Assets.xcassets */,
@@ -171,6 +176,7 @@
 		F9D784D7299201BD00C2727F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F9CCB6E6299848E900F952EE /* LocationView.swift */,
 				F93B194F2996368C00A2F416 /* CallView.swift */,
 				F9D784D5299201B800C2727F /* VolumeView.swift */,
 			);
@@ -320,7 +326,9 @@
 				F93B19502996368C00A2F416 /* CallView.swift in Sources */,
 				F9DA2D82299303E0004ACA7A /* AudioButtonOperation.swift in Sources */,
 				F9D784AE2992018200C2727F /* ContentView.swift in Sources */,
-				F933C7642995E7A400CAAC59 /* LottieView.swift in Sources */,
+				F9CCB6ED299859AB00F952EE /* LocationViewModal.swift in Sources */,
+				F933C7642995E7A400CAAC59 /* LottieViewModal.swift in Sources */,
+				F9CCB6E7299848E900F952EE /* LocationView.swift in Sources */,
 				F9D784D6299201B800C2727F /* VolumeView.swift in Sources */,
 				F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */,
 			);
@@ -537,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location to show it on map";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eko.EarthquakeAppTests;
@@ -556,6 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location to show it on map";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eko.EarthquakeAppTests;
