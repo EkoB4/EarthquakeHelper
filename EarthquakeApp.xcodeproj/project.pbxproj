@@ -15,6 +15,8 @@
 		F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F99947B32992EE82008D0C1A /* Bagirma.mp3 */; };
 		F9CCB6E7299848E900F952EE /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6E6299848E900F952EE /* LocationView.swift */; };
 		F9CCB6ED299859AB00F952EE /* LocationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */; };
+		F9CCB72B29998F9A00F952EE /* MapPointViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB72A29998F9A00F952EE /* MapPointViewModal.swift */; };
+		F9CCB72D2999930700F952EE /* rowPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB72C2999930700F952EE /* rowPin.swift */; };
 		F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */; };
 		F9D784AE2992018200C2727F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D784AD2992018200C2727F /* ContentView.swift */; };
 		F9D784B02992018200C2727F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D784AF2992018200C2727F /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		F99947B32992EE82008D0C1A /* Bagirma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bagirma.mp3; path = ../../../../Downloads/Bagirma.mp3; sourceTree = "<group>"; };
 		F9CCB6E6299848E900F952EE /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModal.swift; sourceTree = "<group>"; };
+		F9CCB72A29998F9A00F952EE /* MapPointViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointViewModal.swift; sourceTree = "<group>"; };
+		F9CCB72C2999930700F952EE /* rowPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rowPin.swift; sourceTree = "<group>"; };
 		F9D784A82992018200C2727F /* EarthquakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAppApp.swift; sourceTree = "<group>"; };
 		F9D784AD2992018200C2727F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,10 @@
 		F93B19532996374F00A2F416 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				F9CCB72C2999930700F952EE /* rowPin.swift */,
+				F9CCB72A29998F9A00F952EE /* MapPointViewModal.swift */,
+				F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */,
+				F933C7632995E7A400CAAC59 /* LottieViewModal.swift */,
 				F9DA2D81299303E0004ACA7A /* AudioButtonOperation.swift */,
 			);
 			path = Modal;
@@ -138,8 +146,6 @@
 				F93B19532996374F00A2F416 /* Modal */,
 				F9D784AB2992018200C2727F /* EarthquakeAppApp.swift */,
 				F9D784AD2992018200C2727F /* ContentView.swift */,
-				F933C7632995E7A400CAAC59 /* LottieViewModal.swift */,
-				F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */,
 				F949CF72299211DF00D31B2A /* Sound */,
 				F9D784D7299201BD00C2727F /* View */,
 				F9D784AF2992018200C2727F /* Assets.xcassets */,
@@ -326,10 +332,12 @@
 				F93B19502996368C00A2F416 /* CallView.swift in Sources */,
 				F9DA2D82299303E0004ACA7A /* AudioButtonOperation.swift in Sources */,
 				F9D784AE2992018200C2727F /* ContentView.swift in Sources */,
+				F9CCB72B29998F9A00F952EE /* MapPointViewModal.swift in Sources */,
 				F9CCB6ED299859AB00F952EE /* LocationViewModal.swift in Sources */,
 				F933C7642995E7A400CAAC59 /* LottieViewModal.swift in Sources */,
 				F9CCB6E7299848E900F952EE /* LocationView.swift in Sources */,
 				F9D784D6299201B800C2727F /* VolumeView.swift in Sources */,
+				F9CCB72D2999930700F952EE /* rowPin.swift in Sources */,
 				F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

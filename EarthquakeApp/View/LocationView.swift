@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 import MapKit
 struct LocationView : View {
-    private let places = [
-        PointMap(name: "Test", latitude: 37.334648, longtitude: -122.0111607)
-    ]
+    @State var pinModal = MapPointViewModal()
     @StateObject  var viewModal = LocationViewModal()
     var body: some View{
         ZStack(alignment: .bottom){
-            Map(coordinateRegion:$viewModal.region,showsUserLocation: true, annotationItems: places){ place in
-                MapMarker(coordinate: place.PinCoordinate)
+            Map(coordinateRegion:$viewModal.region,showsUserLocation: true, annotationItems: pinModal.places){ place in
+                MapAnnotation(coordinate: place.PinCoordinate) {
+                    rowPin(title: place.name)
+                }
             }
                 .ignoresSafeArea()
                 .tint(.red)
