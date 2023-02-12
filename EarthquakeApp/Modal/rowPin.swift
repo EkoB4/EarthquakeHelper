@@ -7,22 +7,24 @@
 
 import Foundation
 import SwiftUI
-
+import CoreLocationUI
 struct rowPin : View{
     let title: String
+    @State private var showText = true
     var body: some View{
         VStack{
-            Text(title)
-            
-            
-            Image(systemName: "mappin.circle.fill")
-                .font(.title)
-                .foregroundColor(.red)
-            
+            VStack{
+                Text(title)
+                Image(systemName: "mappin.circle.fill")
+                    .font(.title)
+                    .foregroundColor(Color("Blue2"))
                 
-            Image(systemName: "arrowtriangle.down.fill")
-                .foregroundColor(.red)
+                Image(systemName: "arrowtriangle.down.fill")
+                    .foregroundColor(.red)
+                    .offset(y:0.5)
+            }
         }
+        
     }
 }
 

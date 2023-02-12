@@ -39,7 +39,8 @@ struct CallView: View {
                         .background(RoundedRectangle(cornerRadius: 20)
                             .frame(width: 200,height: 50)
                             .foregroundColor(.red))
-                }            }
+                }
+            }
         }
     }
 }
