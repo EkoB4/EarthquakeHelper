@@ -11,11 +11,13 @@ import CoreLocationUI
 class LocationViewModal: NSObject,ObservableObject,CLLocationManagerDelegate{
     @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 20, longitude: 100), span: MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100))
     
+    
     let locationManager = CLLocationManager()
     
     override init(){
         super.init()
         locationManager.delegate = self
+        
     }
     func requestLiveLocation(){
         locationManager.requestLocation()
@@ -23,7 +25,6 @@ class LocationViewModal: NSObject,ObservableObject,CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let latestLocation = locations.first else{
-            
             return
         }
         DispatchQueue.main.async {
@@ -33,5 +34,15 @@ class LocationViewModal: NSObject,ObservableObject,CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
     }
-     
+}
+
+struct PointMap : Identifiable{
+    let id = UUID()
+    let name:String
+    let latitude: Double
+    let longtitude:Double
+    
+    var PinCoordinate:CLLocationCoordinate2D{
+        CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+    }
 }
