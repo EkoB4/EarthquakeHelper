@@ -16,7 +16,7 @@ struct SplashScreen: View {
         }else{
             VStack{
                 ZStack{
-                    LottieViewModal(lottie: "Istamnul")
+                    LottieViewModal(lottie: "Istanbul")
                 }.background {
                     Color("Blue2").ignoresSafeArea()
                 }

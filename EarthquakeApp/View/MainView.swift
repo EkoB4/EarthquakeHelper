@@ -17,6 +17,7 @@ struct MainView: View {
                             Text("Istanbul Earthquake App").foregroundColor(.white)
                                 .bold().font(.title)
                         }.padding(.bottom,UIScreen.main.bounds.height/1.5)
+                        
                         VStack{
                             Image("istanbul")
                                  .resizable()
@@ -24,38 +25,55 @@ struct MainView: View {
                                  .frame(width: 350,height: 200)
                             HStack{
                                 RoundedRectangle(cornerRadius: 20)
-                                    .foregroundColor(Color("Blue1"))
-                                    .frame(width: 100,height: 120)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 20)
+                                    .frame(width: 140,height: 140)
                                     .overlay {
-                                        NavigationLink(destination: CallView()) {
-                                            Text("CallView")
-                                                .font(.title)
-                                                .bold()
-                                                .foregroundColor(.white)
-                                        }
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .foregroundColor(Color("Blue3"))
+                                            .frame(width: 110,height: 110)
+                                            .overlay {
+                                                NavigationLink(destination: CallView()) {
+                                                    Image("Alert")
+                                                        .resizable()
+                                                        .frame(width: 60,height: 60)
+                                                        
+                                                }
+                                            }
                                     }
                                 RoundedRectangle(cornerRadius: 20)
-                                    .foregroundColor(Color("Blue1"))
-                                    .frame(width: 200,height: 120)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 20)
+                                    .frame(width: 200,height: 140)
                                     .overlay {
-                                        NavigationLink(destination: LocationView()) {
-                                            Text("Location View")
-                                                .font(.title)
-                                                .bold()
-                                                .foregroundColor(.white)
-                                        }
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .foregroundColor(Color("Blue3"))
+                                            .frame(width: 180,height: 110)
+                                            .overlay {
+                                                NavigationLink(destination: LocationView()) {
+                                                    Image("maps")
+                                                        .resizable()
+                                                        .frame(width: 60,height: 60)
+                                                        
+                                                }
+                                            }
                                     }
                             }.padding()
                             VStack{
                                 RoundedRectangle(cornerRadius: 20)
-                                    .foregroundColor(Color("Blue1"))
-                                    .frame(width: 320,height: 120)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 20)
+                                    .frame(width: 350,height: 120)
                                     .overlay {
-                                        NavigationLink(destination: LocationView()) {
-                                            Text("Istanbul earthquake reports")
-                                                .font(.title)
-                                                .bold()
-                                                .foregroundColor(.white)
+                                        NavigationLink(destination: Text("This shows files")) {
+                                            RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 100)
+                                                .overlay {
+                                                    Text("Istanbul earthquake reports")
+                                                        .font(.title)
+                                                        .bold()
+                                                        .foregroundColor(.white)
+
+                                                }
                                         }
                                     }
                             }
