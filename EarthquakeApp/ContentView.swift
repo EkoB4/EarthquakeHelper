@@ -7,15 +7,16 @@
 
 import SwiftUI
 struct ContentView: View {
+    let displayPdf : URL
     var body: some View {
         VStack{
-            LocationView()
+            PDFViewRepresentable(documentUrl: programUrl)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(displayPdf: programUrl)
     }
 }
