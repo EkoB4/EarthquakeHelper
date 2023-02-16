@@ -13,6 +13,7 @@
 		F93B19502996368C00A2F416 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B194F2996368C00A2F416 /* CallView.swift */; };
 		F942F74E299C4E6800F8838C /* PdfViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942F74D299C4E6800F8838C /* PdfViewModal.swift */; };
 		F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F949CF742992132C00D31B2A /* Duduk.mp3 */; };
+		F9706034299E25F600C5C1B1 /* IstanbulPdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9706033299E25F600C5C1B1 /* IstanbulPdfView.swift */; };
 		F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F99947B32992EE82008D0C1A /* Bagirma.mp3 */; };
 		F9CCB6E7299848E900F952EE /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6E6299848E900F952EE /* LocationView.swift */; };
 		F9CCB6ED299859AB00F952EE /* LocationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */; };
@@ -32,7 +33,6 @@
 		F9E55B892999DB6900BAD1DD /* Istanbul.json in Resources */ = {isa = PBXBuildFile; fileRef = F9E55B882999DB6800BAD1DD /* Istanbul.json */; };
 		F9E55B8E2999E21500BAD1DD /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E55B8D2999E21500BAD1DD /* SplashScreen.swift */; };
 		F9E55BCE299B12AF00BAD1DD /* PdfModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E55BCD299B12AF00BAD1DD /* PdfModal.swift */; };
-		F9E55BD0299B138200BAD1DD /* 27153958_SINIF-CARSAF-28-KASIM.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F9E55BCF299B138200BAD1DD /* 27153958_SINIF-CARSAF-28-KASIM.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,7 @@
 		F93B194F2996368C00A2F416 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		F942F74D299C4E6800F8838C /* PdfViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfViewModal.swift; sourceTree = "<group>"; };
 		F949CF742992132C00D31B2A /* Duduk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Duduk.mp3; path = ../../../../Downloads/Duduk.mp3; sourceTree = "<group>"; };
+		F9706033299E25F600C5C1B1 /* IstanbulPdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstanbulPdfView.swift; sourceTree = "<group>"; };
 		F99947B32992EE82008D0C1A /* Bagirma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bagirma.mp3; path = ../../../../Downloads/Bagirma.mp3; sourceTree = "<group>"; };
 		F9CCB6E6299848E900F952EE /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModal.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		F9E55B8A2999E0D100BAD1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F9E55B8D2999E21500BAD1DD /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F9E55BCD299B12AF00BAD1DD /* PdfModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfModal.swift; sourceTree = "<group>"; };
-		F9E55BCF299B138200BAD1DD /* 27153958_SINIF-CARSAF-28-KASIM.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "27153958_SINIF-CARSAF-28-KASIM.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,6 @@
 		F949CF72299211DF00D31B2A /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				F9E55BCF299B138200BAD1DD /* 27153958_SINIF-CARSAF-28-KASIM.pdf */,
 				F9E55B882999DB6800BAD1DD /* Istanbul.json */,
 				F93B194B29962F7300A2F416 /* whistle.json */,
 				F93B194D2996309700A2F416 /* Scream.json */,
@@ -140,6 +139,7 @@
 		F9D7849F2992018100C2727F = {
 			isa = PBXGroup;
 			children = (
+				F9706033299E25F600C5C1B1 /* IstanbulPdfView.swift */,
 				F9D784AA2992018200C2727F /* EarthquakeApp */,
 				F9D784BB2992018200C2727F /* EarthquakeAppTests */,
 				F9D784C52992018200C2727F /* EarthquakeAppUITests */,
@@ -319,7 +319,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E55BD0299B138200BAD1DD /* 27153958_SINIF-CARSAF-28-KASIM.pdf in Resources */,
 				F9E55B892999DB6900BAD1DD /* Istanbul.json in Resources */,
 				F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */,
 				F93B194C29962F7300A2F416 /* whistle.json in Resources */,
@@ -364,6 +363,7 @@
 				F9D784D6299201B800C2727F /* VolumeView.swift in Sources */,
 				F9CCB72D2999930700F952EE /* rowPin.swift in Sources */,
 				F9D784AC2992018200C2727F /* EarthquakeAppApp.swift in Sources */,
+				F9706034299E25F600C5C1B1 /* IstanbulPdfView.swift in Sources */,
 				F9E55BCE299B12AF00BAD1DD /* PdfModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

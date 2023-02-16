@@ -16,13 +16,10 @@ struct MainView: View {
                         VStack{
                             Text("Istanbul Earthquake App").foregroundColor(.white)
                                 .bold().font(.title)
-                        }.padding(.bottom,UIScreen.main.bounds.height/1.5)
+                        }.padding(.bottom,UIScreen.main.bounds.height/1.2)
                         
                         VStack{
-                            Image("istanbul")
-                                 .resizable()
-                                 .cornerRadius(20)
-                                 .frame(width: 350,height: 200)
+                            
                             HStack{
                                 RoundedRectangle(cornerRadius: 20)
                                     .foregroundColor(.white)
@@ -41,6 +38,7 @@ struct MainView: View {
                                                 }
                                             }
                                     }
+                                
                                 RoundedRectangle(cornerRadius: 20)
                                     .foregroundColor(.white)
                                     .shadow(radius: 20)
@@ -58,18 +56,54 @@ struct MainView: View {
                                                 }
                                             }
                                     }
-                            }.padding()
+                                
+                            }
                             VStack{
                                 RoundedRectangle(cornerRadius: 20)
                                     .foregroundColor(.white)
                                     .shadow(radius: 20)
-                                    .frame(width: 350,height: 120)
+                                    .frame(width: 350,height: 140)
                                     .overlay {
-                                        NavigationLink(destination: Text("This shows files")) {
-                                            RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 100)
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .foregroundColor(Color("Blue3"))
+                                            .frame(width: 300,height: 110)
+                                            .overlay {
+                                                NavigationLink(destination: VolumeView()) {
+                                                    Image("Sound")
+                                                        .resizable()
+                                                        .frame(width: 80,height: 80)
+                                                    
+                                                }
+                                            }
+                                    }
+                            }
+                            VStack{
+                                RoundedRectangle(cornerRadius: 20)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 20)
+                                    .frame(width: 350,height: 80)
+                                    .overlay {
+                                        NavigationLink(destination: IstanbulPdfView()) {
+                                            RoundedRectangle(cornerRadius: 20).frame(width: 300,height:60)
                                                 .overlay {
                                                     Text("Istanbul earthquake reports")
-                                                        .font(.title)
+                                                        .font(.title2)
+                                                        .bold()
+                                                        .foregroundColor(.white)
+
+                                                }
+                                        }
+                                    }
+                                RoundedRectangle(cornerRadius: 20)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 20)
+                                    .frame(width: 350,height: 80)
+                                    .overlay {
+                                        NavigationLink(destination: IstanbulPdfView()) {
+                                            RoundedRectangle(cornerRadius: 20).frame(width: 300,height:60)
+                                                .overlay {
+                                                    Text("Istanbul earthquake reports")
+                                                        .font(.title2)
                                                         .bold()
                                                         .foregroundColor(.white)
 
@@ -77,12 +111,12 @@ struct MainView: View {
                                         }
                                     }
                             }
-                        }.padding(.top,UIScreen.main.bounds.height*0.13)
+                        }.padding(.top,UIScreen.main.bounds.height/15)
                     })
                     .ignoresSafeArea()
                     .foregroundColor(Color("Blue2"))
                 }
-            }
+            }.accentColor(Color("Blue2"))
         }
     }
 }

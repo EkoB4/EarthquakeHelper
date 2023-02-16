@@ -21,7 +21,7 @@ struct SplashScreen: View {
                     Color("Blue2").ignoresSafeArea()
                 }
             }.onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5.5){/* To run simultaneously in the background for 5 second while*/
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5.5){/*5sn boyunca arka planda simule eder*/
                     withAnimation {
                         self.isActive = true
                     }
