@@ -35,5 +35,4 @@ struct LottieViewModal : UIViewRepresentable {
 }
 /*         animationView.animation = Animation.named("animationName") ->    animationView.animation = LottieAnimation.named("animationName")
            Duzeltilmis 
-
 */

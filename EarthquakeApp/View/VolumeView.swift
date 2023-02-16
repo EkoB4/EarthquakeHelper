@@ -17,8 +17,8 @@ struct VolumeView: View {
                 VStack{
                     VStack{
                        LottieViewModal(lottie: "whistle")
-                            .frame(width: 300,height: 300)
-                            .background(RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 300))
+                            .frame(width: 400,height: 200)
+                            .background(RoundedRectangle(cornerRadius: 20).frame(width: 200,height: 200))
                             .foregroundColor(Color("Blue3"))
                     }
                     HStack{
@@ -41,8 +41,8 @@ struct VolumeView: View {
                     }
                     VStack{
                         LottieViewModal(lottie: "Scream")
-                            .frame(width: 300,height: 300)
-                            .background(RoundedRectangle(cornerRadius: 20).frame(width: 300,height: 300))
+                            .frame(width: 300,height: 200)
+                            .background(RoundedRectangle(cornerRadius: 20).frame(width: 200,height: 200))
                             .foregroundColor(Color("Blue3"))
                     }//.padding(.vertical,10)
                     HStack{

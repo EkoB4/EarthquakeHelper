@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 import CoreLocationUI
-struct rowPin : View{
+struct RowPin : View{
     let title: String
     @State private var showText = true
     var body: some View{

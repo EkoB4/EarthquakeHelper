@@ -15,7 +15,7 @@ struct LocationView : View {
         ZStack(alignment: .bottom){
             Map(coordinateRegion:$viewModal.region,showsUserLocation: true, annotationItems: pinModal.places){ place in
                 MapAnnotation(coordinate: place.PinCoordinate) {
-                    rowPin(title: place.name)
+                    RowPin(title: place.name)
                 }
             }
                 .ignoresSafeArea()
