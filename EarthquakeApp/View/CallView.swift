@@ -30,12 +30,7 @@ struct CallView: View {
                         UIApplication.shared.open(messageUrl)
                     } label: {
                         HStack{
-                            Text("Where Im I").foregroundColor(Color("Blue2"))
-                                .bold()
-                            
-                            Text("with message")
-                                .font(.subheadline)
-                                .foregroundColor(Color("Blue2"))
+                            Text("Detailed location with sms").foregroundColor(Color("Blue2"))
                                 .bold()
                         }
                     }
@@ -44,12 +39,21 @@ struct CallView: View {
                 }
                 Section(header: Text("Need to do")) {
                     Link(destination: URL(string: "https://www.cimer.gov.tr/")!) {
-                        Text("GO CIMER help")
+                        Text("Go CIMER help")
                             .foregroundColor(Color("Blue2"))
                             .bold()
                     }
                     Link(destination: URL(string: "https://ahbap.org/")!) {
-                        Text("")
+                        Text("For Help with AHBAP")
+                            .font(.subheadline)
+                            .foregroundColor(Color("Blue2"))
+                            .bold()
+                    }
+                    Link(destination: URL(string: "https://www.kizilay.org.tr/bagis")!) {
+                        Text("For Help with Kizilay")
+                            .font(.subheadline)
+                            .foregroundColor(Color("Blue2"))
+                            .bold()
                     }
                     
                 }
@@ -64,23 +68,4 @@ struct CallView_Previews: PreviewProvider {
         CallView()
     }
 }
-/*
- VStack{
- Button {
- let messageApp = "messages://"
- let messageFormat = messageApp + Location
- guard let messageUrl = URL(string: messageFormat) else {return}
- UIApplication.shared.open(messageUrl)
- } label: {
- Text("Where Im I").foregroundColor(.white)
- .bold()
- .background(RoundedRectangle(cornerRadius: 20)
- .frame(width: 200,height: 50)
- .foregroundColor(.red))
- 
- }
- Text("with message ")
- .font(.subheadline)
- .padding()
- }
- */
+

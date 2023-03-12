@@ -42,7 +42,7 @@ class AudioButtonOperation {
 
 //sinif siralama sinifi
 enum Sounds: String {
-    case scary = "Bagirma"
-    case wisthle = "Duduk"
+    case scary = "bagirma"
+    case wisthle = "duduk"
 }
 

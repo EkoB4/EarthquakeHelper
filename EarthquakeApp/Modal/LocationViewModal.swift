@@ -46,3 +46,5 @@ struct PointMap : Identifiable{
         CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
     }
 }
+
+

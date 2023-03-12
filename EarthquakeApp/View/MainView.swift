@@ -110,6 +110,22 @@ struct MainView: View {
                                                 }
                                         }
                                     }
+                                RoundedRectangle(cornerRadius: 20)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 20)
+                                    .frame(width: 350,height: 80)
+                                    .overlay {
+                                        NavigationLink(destination: CallView()) {
+                                            RoundedRectangle(cornerRadius: 20).frame(width: 300,height:60)
+                                                .overlay {
+                                                    Text("Istanbul earthquake reports")
+                                                        .font(.title2)
+                                                        .bold()
+                                                        .foregroundColor(.white)
+
+                                                }
+                                        }
+                                    }
                             }
                         }.padding(.top,UIScreen.main.bounds.height/15)
                     })

@@ -12,9 +12,9 @@
 		F93B194E2996309700A2F416 /* Scream.json in Resources */ = {isa = PBXBuildFile; fileRef = F93B194D2996309700A2F416 /* Scream.json */; };
 		F93B19502996368C00A2F416 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B194F2996368C00A2F416 /* CallView.swift */; };
 		F942F74E299C4E6800F8838C /* PdfViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942F74D299C4E6800F8838C /* PdfViewModal.swift */; };
-		F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F949CF742992132C00D31B2A /* Duduk.mp3 */; };
+		F96D42FB29BE7E3F00834729 /* duduk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F96D42FA29BE7E3F00834729 /* duduk.mp3 */; };
+		F96D42FD29BE7E5A00834729 /* bagirma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F96D42FC29BE7E5A00834729 /* bagirma.mp3 */; };
 		F9706034299E25F600C5C1B1 /* IstanbulPdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9706033299E25F600C5C1B1 /* IstanbulPdfView.swift */; };
-		F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F99947B32992EE82008D0C1A /* Bagirma.mp3 */; };
 		F9CCB6E7299848E900F952EE /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6E6299848E900F952EE /* LocationView.swift */; };
 		F9CCB6ED299859AB00F952EE /* LocationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */; };
 		F9CCB72B29998F9A00F952EE /* MapPointViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB72A29998F9A00F952EE /* MapPointViewModal.swift */; };
@@ -58,9 +58,9 @@
 		F93B194D2996309700A2F416 /* Scream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Scream.json; sourceTree = "<group>"; };
 		F93B194F2996368C00A2F416 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		F942F74D299C4E6800F8838C /* PdfViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfViewModal.swift; sourceTree = "<group>"; };
-		F949CF742992132C00D31B2A /* Duduk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Duduk.mp3; path = ../../../../Downloads/Duduk.mp3; sourceTree = "<group>"; };
+		F96D42FA29BE7E3F00834729 /* duduk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = duduk.mp3; sourceTree = "<group>"; };
+		F96D42FC29BE7E5A00834729 /* bagirma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bagirma.mp3; sourceTree = "<group>"; };
 		F9706033299E25F600C5C1B1 /* IstanbulPdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstanbulPdfView.swift; sourceTree = "<group>"; };
-		F99947B32992EE82008D0C1A /* Bagirma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bagirma.mp3; path = ../../../../Downloads/Bagirma.mp3; sourceTree = "<group>"; };
 		F9CCB6E6299848E900F952EE /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		F9CCB6EC299859AB00F952EE /* LocationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModal.swift; sourceTree = "<group>"; };
 		F9CCB72A29998F9A00F952EE /* MapPointViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointViewModal.swift; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 				F9E55B882999DB6800BAD1DD /* Istanbul.json */,
 				F93B194B29962F7300A2F416 /* whistle.json */,
 				F93B194D2996309700A2F416 /* Scream.json */,
-				F99947B32992EE82008D0C1A /* Bagirma.mp3 */,
-				F949CF742992132C00D31B2A /* Duduk.mp3 */,
+				F96D42FA29BE7E3F00834729 /* duduk.mp3 */,
+				F96D42FC29BE7E5A00834729 /* bagirma.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -320,12 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E55B892999DB6900BAD1DD /* Istanbul.json in Resources */,
-				F99947B42992EE82008D0C1A /* Bagirma.mp3 in Resources */,
 				F93B194C29962F7300A2F416 /* whistle.json in Resources */,
 				F9D784B32992018200C2727F /* Preview Assets.xcassets in Resources */,
 				F9D784B02992018200C2727F /* Assets.xcassets in Resources */,
+				F96D42FB29BE7E3F00834729 /* duduk.mp3 in Resources */,
+				F96D42FD29BE7E5A00834729 /* bagirma.mp3 in Resources */,
 				F93B194E2996309700A2F416 /* Scream.json in Resources */,
-				F949CF752992132C00D31B2A /* Duduk.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
